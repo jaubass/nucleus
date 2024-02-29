@@ -6,4 +6,3 @@
 - Responsive
 - Estandar BEM
 - Animaciones y transiciones CSS
-

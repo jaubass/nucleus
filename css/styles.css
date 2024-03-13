@@ -287,3 +287,22 @@ img {
     width: 45rem;
     margin: 0 auto 4rem auto;
 }
+
+@media (min-width: 768px) { 
+    .comisiones__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: center;
+    }
+ }
+
+ .comisiones__titulo {
+    font-size: 2.6rem;
+    line-height: 2.7rem;
+
+ }
+
+ .comisiones__imagen {
+    width: 50rem;
+ }

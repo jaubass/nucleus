@@ -37,6 +37,7 @@ img {
     max-width: 100%;
     display: block;
 }
+
 [class$="__contenedor"] {
     max-width: 120rem;
     margin: 0 auto;
@@ -234,6 +235,55 @@ img {
 }
 
 .listado__texto {
+    text-align: center;
     margin: 0;
     font-size: 2rem;
+}
+
+/* Seccion Seguridad */
+
+.seguridad {
+    background-color: var(--primario);
+    padding: 20rem 0rem;
+    position: relative;
+    margin: 10rem 0;
+    overflow: hidden;
+}
+
+.seguridad::before,
+.seguridad::after {
+    background-color: var(--blanco);
+    content: '';
+    height: 20rem;
+    width: 130%;
+    position: absolute;
+}
+.seguridad::before {
+    top: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+}
+.seguridad::after {
+    bottom: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+
+}
+
+@media (min-width: 768px) { 
+    .seguridad__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: center;
+    }
+}
+
+.seguridad__heading {
+    color: var(--blanco);
+}
+
+.seguridad__imagen {
+    width: 45rem;
+    margin: 0 auto 4rem auto;
 }
